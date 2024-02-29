@@ -1,0 +1,76 @@
+/* src/Components/TextCards.css */
+
+.text-cards {
+    padding: 4rem;
+    background: #fff;
+  }
+
+.text-cards h1 {
+    color: #0056b3; /* Blue color */
+    /* Add any other styling you need for this heading */
+  }
+  
+  
+  .text-cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .text-cards__wrapper {
+    position: relative;
+  }
+  
+  .text-cards__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between cards */
+  }
+  
+  .text-card-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(50% - 10px); /* Adjust width for pairs, considering the gap */
+    margin-bottom: 20px; /* Space between rows */
+  }
+  
+  .text-card-item-info > h5 {
+    margin: 0;
+    color: #0056b3;
+    font-weight: bold; /* Make text bold */
+    font-size: 24px; /* Increase text size */
+  }
+  
+  .text-card-item-info > p {
+    color: #666;
+    text-align: justify; /* Justify the text */
+  }
+  
+  /* Additional hover effects for text */
+  .text-card-item {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scale effect */
+  }
+  
+  .text-card-item:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .text-cards__items {
+      flex-direction: column; /* Ensure items stack vertically */
+    }
+  
+    .text-card-item {
+      width: 100%; /* Each card takes full width */
+      margin-bottom: 20px; /* Adjust as needed for spacing between cards */
+    }
+  }
+  
+  
+  

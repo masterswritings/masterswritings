@@ -1,0 +1,68 @@
+.oneOnOneMeeting {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .oneOnOneMeeting-hero h1,
+  .meeting-services .service-item h2 {
+    text-align: center;
+    color: #0056b3; /* Blue color for headings */
+  }
+  
+  .meeting-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+  }
+  
+  .service-item {
+    flex-basis: calc(33% - 20px); /* Adjust for 3 items per row */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .icon {
+    font-size: 60px; /* Increase the icon size for better visibility */
+    color: #0056b3; /* Blue color for icons */
+    margin-bottom: 15px;
+  }
+  
+  .oneOnOneMeeting-cta {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 50px;
+    width: 80%; /* Adjust the width for better focus */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  /* Adjustments for the bottom row of 2 items */
+  @media (max-width: 1024px) {
+    .service-item {
+      flex-basis: calc(50% - 20px); /* Adjust for 2 items per row on smaller screens */
+    }
+  }
+  
+  /* Further responsiveness for mobile */
+  @media (max-width: 768px) {
+    .service-item {
+      flex-basis: 100%; /* Stack vertically on very small screens */
+    }
+  }
+  

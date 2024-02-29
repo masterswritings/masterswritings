@@ -1,0 +1,79 @@
+/* src/Components/pages/Products.css */
+
+.products {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .products-hero-section h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .products-content-section {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .section-icon {
+    margin-right: 15px;
+    font-size: 40px;
+    color: #0056b3;
+  }
+  
+  .products-content-section div {
+    flex: 1;
+  }
+  
+  .products-content-section h2 {
+    margin-bottom: 1rem;
+    color: #004085;
+  }
+  
+  .products-content-section p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .products-cta-section {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .products-cta-section div {
+    flex: 1;
+  }
+  
+
+  @media (max-width: 768px) {
+    .service-item {
+      flex-direction: column;
+      align-items: center; /* Change from flex-start to center */
+      text-align: center; /* Ensure text within the item is also centered */
+    }
+  
+    .service-item span {
+      margin-bottom: 5px;
+      font-size: 1rem;
+      width: 100%; /* Ensure the span takes full width to center the text properly */
+    }
+  
+    .service-section.special {
+      margin-top: 2rem;
+    }
+  }
+  

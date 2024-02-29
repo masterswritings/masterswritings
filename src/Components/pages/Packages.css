@@ -1,0 +1,88 @@
+.packages {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.packages h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-section {
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.service-item {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s, transform 0.3s; /* Add transform to the transition */
+}
+
+.service-item:hover {
+  background-color: #e7e7e7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Adjust values to match non-hover state as closely as possible */
+  transform: translateY(-2px); /* Slightly lift the card */
+}
+
+.service-item span {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.service-section.special {
+  background-color: #e7f4ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-section.special .service-icon {
+  color: #1a8cd8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+  .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-item span {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+
+  .service-section.special {
+    margin-top: 2rem;
+  }
+}
+
+/* Primary color variable */
+:root {
+  --primary-color: #4a90e2;
+}
