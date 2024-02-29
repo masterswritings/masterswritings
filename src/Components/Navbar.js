@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import RateReviewIcon from '@mui/icons-material/RateReview';
@@ -43,31 +44,32 @@ function Navbar() {
                         {click ? <CloseIcon style={{ color: '#fff' }} /> : <MenuIcon style={{ color: '#fff' }} />}
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item'>
-                            <a href='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
-                            </a>
-                        </li>
-                        <li className='nav-item'>
-                            <a href='/services' className='nav-links' onClick={closeMobileMenu}>
-                                LOR
-                            </a>
-                        </li>
-                        <li className='nav-item'>
-                            <a href='/products' className='nav-links' onClick={closeMobileMenu}>
-                                SOP
-                            </a>
-                        </li>
-                        <li className='nav-item'>
-                            <a href='/one-on-one-meeting' className='nav-links' onClick={closeMobileMenu}>
-                                One-on-One Meeting
-                            </a>
-                        </li>
-                        <li className='nav-item'>
-                            <a href='/packages' className='nav-links' onClick={closeMobileMenu}>
-                                Packages
-                            </a>
-                        </li>
+                    <li className='nav-item'>
+                     <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                          Home
+                      </Link>
+                     </li>
+                     <li className='nav-item'>
+                     <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                         LOR
+                    </Link>
+                      </li>
+                     <li className='nav-item'>
+                    <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                        SOP
+                    </Link>
+                    </li>
+                    <li className='nav-item'>
+                     <Link to='/one-on-one-meeting' className='nav-links' onClick={closeMobileMenu}>
+                     One-on-One Meeting
+                    </Link>
+                    </li>
+                    <li className='nav-item'>
+                    <Link to='/packages' className='nav-links' onClick={closeMobileMenu}>
+                     Packages
+                    </Link>
+                     </li>
+
                         <li className='nav-item'>
                             <a href='https://forms.gle/gZdyYrG5oTYrfqV3A' target="_blank" rel="noopener noreferrer" className='nav-links-mobile' onClick={closeMobileMenu}>
                                 CONTACT US
