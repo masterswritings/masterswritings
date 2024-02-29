@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from './Components/pages/Home';
 import Services from './Components/pages/Services';
 import Products from './Components/pages/Products';
@@ -13,7 +13,7 @@ import GetStartedPage from './Components/pages/GetStartedPage';
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter basename="/masterswritings">
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path='/packages' element={<Packages />} />
           <Route path='/get-started' element={<GetStartedPage />} /> 
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
