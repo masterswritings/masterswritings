@@ -9,7 +9,7 @@ function CardItem(props) {
     <li className='cards__item'>
       <Link className='cards__item__link' to={path}>
         <figure className='cards__item__pic-wrap' data-category={label}>
-          <img className='cards__item__img' alt='Travel' src={src} />
+          <img className='cards__item__img' alt='Img' src={src} />
         </figure>
         <div className='cards__item__info'>
           {texts.map((text, index) => ( // Render each text as a paragraph or heading

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from './Button';
 import './HeroSection.css';
-import { useNavigate } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Import the arrow down icon
 
 function HeroSection({ scrollToCards }) {
@@ -13,7 +12,8 @@ function HeroSection({ scrollToCards }) {
 
   return (
     <div className='hero-container'>
-      <video src='/videos/video-2.mp4' autoPlay loop muted />
+      {/* Use process.env.PUBLIC_URL for the video in the background */}
+      <video src={`${process.env.PUBLIC_URL}/videos/video-2.mp4`} autoPlay loop muted />
       <h1>MASTERS' WRITINGS</h1>
       <p>Where Experience Meets Ambition</p>
       <div className='hero-btns'>
@@ -24,6 +24,7 @@ function HeroSection({ scrollToCards }) {
         >
           WHY CHOOSE US
         </Button>
+
         <Button
           className='btns'
           buttonStyle='btn--primary'
@@ -33,12 +34,15 @@ function HeroSection({ scrollToCards }) {
           WATCH DEMO <i className='far fa-play-circle' />
         </Button>
       </div>
+
+      {/* Update the video source here as well */}
       {showVideo && (
         <div className="video-modal">
-          <video src='/videos/aivideo.mp4' autoPlay loop muted controls className="modal-video" />
+          <video src={`${process.env.PUBLIC_URL}/videos/aivideo.mp4`} autoPlay loop muted controls className="modal-video" />
           <span className="close-modal" onClick={toggleVideo}>×</span>
         </div>
       )}
+
       <div className='scroll-to-cards' onClick={scrollToCards}>
         <KeyboardArrowDownIcon style={{ fontSize: '4rem', color: '#fff' }} />
       </div>

@@ -1,7 +1,8 @@
+App.js
 import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from './Components/pages/Home';
 import Services from './Components/pages/Services';
 import Products from './Components/pages/Products';
@@ -22,9 +23,7 @@ function App() {
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/one-on-one-meeting' element={<OneOnOneMeeting />} />
           <Route path='/packages' element={<Packages />} />
-          <Route path='/get-started' element={<GetStartedPage />} />
-          {/* Catch-all route */}
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path='/get-started' element={<GetStartedPage />} /> 
         </Routes>
       </BrowserRouter>
     </>
