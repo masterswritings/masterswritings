@@ -1,5 +1,6 @@
 import React from 'react';
 import './Products.css';
+import '../../App.css';
 // Importing icons from Material UI or your preferred icon library
 import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';

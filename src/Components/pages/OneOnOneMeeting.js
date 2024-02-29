@@ -1,5 +1,6 @@
 import React from 'react';
 import './OneOnOneMeeting.css';
+import '../../App.css';
 import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import SchoolIcon from '@mui/icons-material/School';

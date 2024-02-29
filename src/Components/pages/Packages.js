@@ -1,5 +1,6 @@
 import React from 'react';
 import './Packages.css';
+import '../../App.css';
 import SchoolIcon from '@mui/icons-material/School';
 import GroupIcon from '@mui/icons-material/Group';
 import ArticleIcon from '@mui/icons-material/Article';

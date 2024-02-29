@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css'; // Ensure this path matches your project structure
+import '../../App.css';
 // Import Material UI icons
 import SchoolIcon from '@mui/icons-material/School';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
