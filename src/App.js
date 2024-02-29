@@ -16,13 +16,13 @@ function App() {
       <BrowserRouter basename="/masterswritings">
         <Navbar/>
         <Routes>
-          <Route exact path="/masterswritings" element={<Home />}></Route> 
-          <Route path="/services" element={<Services />}></Route>
-          <Route path="/products" element={<Products />}></Route> 
-          <Route path="/sign-up" element={<SignUp />}></Route> 
-          <Route path="/one-on-one-meeting" element={<OneOnOneMeeting />}></Route>
-          <Route path="/packages" element={<Packages />}></Route> 
-          <Route path="/get-started" element={<GetStartedPage />}></Route>
+          <Route path='/' element={<Home />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/sign-up' element={<SignUp />} />
+          <Route path='/one-on-one-meeting' element={<OneOnOneMeeting />} />
+          <Route path='/packages' element={<Packages />} />
+          <Route path='/get-started' element={<GetStartedPage />} /> 
         </Routes>
       </BrowserRouter>
     </>
