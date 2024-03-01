@@ -30,7 +30,7 @@ function Cards() {
                 'World Ranking: #43 according to usnews 2024',
                 'Degree: Master of Science in Computer Science',
                 'Graduation Year: January 2024',
-                'LinkedIn Profile: https://www.linkedin.com/in/srinivas-chellaboina-7b9a7b173/?originalSubdomain=in'
+                'LinkedIn Profile: https://www.linkedin.com/in/srinivas-chellaboina'
               ]}
               label='Srinivas Chellaboina'
               path=''
