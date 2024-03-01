@@ -104,7 +104,7 @@
   .navbar-logo img {
     max-height: 80px; /* Adjust logo size for mobile */
     margin-right: auto; /* Align logo to the left */
-    margin-top: -20px; /* Move logo up */
+    margin-top: -30px; /* Move logo up */
   }
     .nav-menu {
       display: flex;
