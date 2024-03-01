@@ -104,7 +104,7 @@
   .navbar-logo img {
     max-height: 80px; /* Adjust logo size for mobile */
     margin-right: auto; /* Align logo to the left */
-    margin-top: -22px; /* Move logo up */
+    margin-top: -23px; /* Move logo up */
   }
     .nav-menu {
       display: flex;
@@ -144,6 +144,13 @@
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+    }
+
+    .navbar {
+      height: 60px; /* Example adjustment */
+    }
+    .hero-container {
+      padding-top: 60px; /* Match the navbar height to remove white space */
     }
   
     .menu-icon {
