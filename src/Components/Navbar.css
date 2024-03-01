@@ -146,12 +146,6 @@
       transform: translate(25%, 50%);
     }
 
-    .navbar {
-      height: 100px; /* Example adjustment */
-    }
-    .hero-container {
-      padding-top: 50px; /* Match the navbar height to remove white space */
-    }
   
     .menu-icon {
       display: block;
