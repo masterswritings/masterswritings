@@ -147,10 +147,10 @@
     }
 
     .navbar {
-      height: 0px; /* Example adjustment */
+      height: 50px; /* Example adjustment */
     }
     .hero-container {
-      padding-top: 80px; /* Match the navbar height to remove white space */
+      padding-top: 0px; /* Match the navbar height to remove white space */
     }
   
     .menu-icon {
