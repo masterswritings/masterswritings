@@ -60,11 +60,17 @@
 }
 
 @media (max-width: 768px) {
-  .service-item {
-      flex-basis: 100%; /* Stack vertically on very small screens */
-      align-items: center; /* Ensure center alignment */
+  .service-item h2 {
+      text-align: center; /* Center-align text for h2 within service items */
   }
-  .service-item h2, .service-item p {
-      text-align: center; /* Center-align text for h2 and p within service items */
+
+  .service-item p {
+      text-align: center; /* Center-align text for p within service items */
+  }
+
+  .service-item {
+    align-items: center; /* Ensure items are centered in the flex container */
+    flex-basis: 100%; /* Stack items vertically on small screens */
   }
 }
+
