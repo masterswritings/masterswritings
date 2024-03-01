@@ -13,7 +13,7 @@ function HeroSection({ scrollToCards }) {
   return (
     <div className='hero-container'>
       {/* Use process.env.PUBLIC_URL for the video in the background */}
-      <video src={`${process.env.PUBLIC_URL}/videos/video-2.mp4`} autoPlay loop muted />
+      <video src={`${process.env.PUBLIC_URL}/videos/video-2.mp4`} autoPlay loop muted playsInline />
       <h1>MASTERS' WRITINGS</h1>
       <p>Where Experience Meets Ambition</p>
       <div className='hero-btns'>
