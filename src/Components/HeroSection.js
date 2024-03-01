@@ -38,7 +38,7 @@ function HeroSection({ scrollToCards }) {
       {/* Update the video source here as well */}
       {showVideo && (
         <div className="video-modal">
-          <video src={`${process.env.PUBLIC_URL}/videos/aivideo.mp4`} autoPlay loop controls className="modal-video" />
+          <video src={`${process.env.PUBLIC_URL}/videos/aivideo.mp4`} autoPlay loop controls className="modal-video" playsInline />
           <span className="close-modal" onClick={toggleVideo}>×</span>
         </div>
       )}
