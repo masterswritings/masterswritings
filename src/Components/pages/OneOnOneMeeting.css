@@ -61,11 +61,9 @@
   
   /* Further responsiveness for mobile */
   @media (max-width: 768px) {
-    .service-item {
-      flex-basis: 100%; /* Stack vertically on very small screens */
-    }
     .service-item h2, .service-item p {
       text-align: center;
     }
+    
   }
   
